@@ -1,1 +1,1 @@
-Zklonowane repozytorium w celu wykonywania ćwiczeń z przedmiotu Metodyki DevOps
+Zklonowane repozytorium w celu wykonywania ćwiczeń z przedmiotu Metodyki DevOps.
