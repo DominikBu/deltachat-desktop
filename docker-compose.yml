@@ -4,11 +4,11 @@ services:
         image: build-agent:latest
         build:
             context: .
-            dockerfile: ./Build-agent/dockerfile
+            dockerfile: ./Docker/dockerfile-build
     testsection:
         image: test-agent:latest
         build:
             context: .
-            dockerfile: ./Test-agent/dockerfile
+            dockerfile: ./Docker/dockerfile-test
         depends_on:
             - buildsection
