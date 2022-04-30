@@ -44,7 +44,6 @@ pipeline {
 				sh 'echo $CREDENTIALS_PSW | docker login -u $CREDENTIALS_USR --password-stdin'
                 sh 'docker tag build-agent:latest dodomax/devops_lab07'
                 sh 'docker push dodomax/devops_lab07'
-				sh 'docker logout'
             }
             post {
                 failure {
@@ -58,6 +57,9 @@ pipeline {
         }
     }
     post {
+		always {
+			sh 'docker logout'
+		}
         failure {
             echo 'Ups, something went wrong.'
         }
