@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Building'
 				sh 'docker-compose build buildsection'
-				sh 'docker-compose logs > result'
+				sh 'docker-compose logs > result.txt'
             }
             post {
                 failure {
