@@ -64,7 +64,7 @@ pipeline {
             echo 'Ups, something went wrong.'
         }
         success {
-            echo 'Pipeline complete!'
+            echo 'Pipeline complete.'
         }
     }
 }
